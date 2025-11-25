@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch Feather 2025!</title>
+
     <style>
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
+            overflow: hidden;
         }
         .pdf-viewer {
             width: 100%;
@@ -17,20 +19,26 @@
         }
         .open-native {
             text-align: center;
-            padding: 10px;
-            background: #f0f0f0;
+            padding: 12px;
+            background: #fafafa;
+            font-size: 17px;
+        }
+        .open-native a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- Google Docs Viewer (scrolls correctly on iPhone) -->
+    <!-- Google Docs viewer fixes iPhone scrolling -->
     <iframe 
         class="pdf-viewer"
-        src="Canva.pdf">
+        src="https://drive.google.com/file/d/1_zH5Yltu5OVNNg58ic7A680-bnb3WkrF/view?usp=sharing">
     </iframe>
 
-    <!-- Backup link for iPhone users -->
+    <!-- Backup button for native iPhone viewer -->
     <div class="open-native">
         <a href="Canva.pdf" target="_blank">Open Full PDF</a>
     </div>
